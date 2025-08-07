@@ -138,62 +138,105 @@ All colors MUST be HSL.
     z-index: 10;
   }
   
-  /* Background animations disabled */
-  .background-animated::before,
-  .background-animated::after,
-  .background-animated .container::before {
-    display: none;
+  /* Animated circuit zap background effects */
+  .background-animated::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+      linear-gradient(90deg, transparent 48%, hsl(var(--brand-500)/0.1) 49%, hsl(var(--brand-500)/0.2) 50%, hsl(var(--brand-500)/0.1) 51%, transparent 52%),
+      linear-gradient(0deg, transparent 48%, hsl(var(--brand-400)/0.08) 49%, hsl(var(--brand-400)/0.15) 50%, hsl(var(--brand-400)/0.08) 51%, transparent 52%);
+    background-size: 200px 200px, 150px 150px;
+    background-position: 0 0, 50px 50px;
+    opacity: 0.3;
+    z-index: -10;
+    pointer-events: none;
+    animation: circuitPulse 8s ease-in-out infinite;
   }
   
-  /* Multiple animation keyframes for scattered falling effect */
-  @keyframes fallScattered1 {
-    0% {
-      transform: translateY(-150px) translateX(0px);
-    }
-    25% {
-      transform: translateY(25vh) translateX(15px);
+  .background-animated::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+      radial-gradient(circle at 20% 30%, hsl(var(--brand-500)/0.15) 1px, transparent 1px),
+      radial-gradient(circle at 80% 70%, hsl(var(--brand-400)/0.12) 1px, transparent 1px),
+      radial-gradient(circle at 40% 80%, hsl(var(--brand-600)/0.1) 1px, transparent 1px),
+      radial-gradient(circle at 70% 20%, hsl(var(--brand-500)/0.08) 1px, transparent 1px);
+    background-size: 80px 80px, 120px 120px, 100px 100px, 90px 90px;
+    background-position: 0 0, 20px 20px, 40px 10px, 60px 30px;
+    opacity: 0.4;
+    z-index: -11;
+    pointer-events: none;
+    animation: circuitSpark 6s linear infinite;
+  }
+  
+  /* Circuit connection lines */
+  .background-animated .container::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: 
+      linear-gradient(45deg, transparent 45%, hsl(var(--brand-500)/0.05) 49%, transparent 51%),
+      linear-gradient(-45deg, transparent 45%, hsl(var(--brand-400)/0.04) 49%, transparent 51%);
+    background-size: 300px 300px, 250px 250px;
+    background-position: 0 0, 100px 100px;
+    opacity: 0.6;
+    z-index: -12;
+    pointer-events: none;
+    animation: circuitFlow 12s linear infinite;
+  }
+  
+  /* Circuit animation keyframes */
+  @keyframes circuitPulse {
+    0%, 100% {
+      opacity: 0.2;
+      transform: scale(1);
     }
     50% {
-      transform: translateY(50vh) translateX(-10px);
+      opacity: 0.4;
+      transform: scale(1.02);
+    }
+  }
+  
+  @keyframes circuitSpark {
+    0% {
+      opacity: 0.3;
+      filter: brightness(0.8);
+    }
+    25% {
+      opacity: 0.5;
+      filter: brightness(1.2);
+    }
+    50% {
+      opacity: 0.4;
+      filter: brightness(0.9);
     }
     75% {
-      transform: translateY(75vh) translateX(20px);
+      opacity: 0.6;
+      filter: brightness(1.1);
     }
     100% {
-      transform: translateY(calc(100vh + 150px)) translateX(-5px);
+      opacity: 0.3;
+      filter: brightness(0.8);
     }
   }
   
-  @keyframes fallScattered2 {
+  @keyframes circuitFlow {
     0% {
-      transform: translateY(-200px) translateX(10px);
-    }
-    30% {
-      transform: translateY(30vh) translateX(-20px);
-    }
-    60% {
-      transform: translateY(60vh) translateX(25px);
+      background-position: 0 0, 100px 100px;
     }
     100% {
-      transform: translateY(calc(100vh + 200px)) translateX(-15px);
-    }
-  }
-  
-  @keyframes fallScattered3 {
-    0% {
-      transform: translateY(-100px) translateX(-10px);
-    }
-    20% {
-      transform: translateY(20vh) translateX(30px);
-    }
-    40% {
-      transform: translateY(40vh) translateX(-25px);
-    }
-    80% {
-      transform: translateY(80vh) translateX(15px);
-    }
-    100% {
-      transform: translateY(calc(100vh + 100px)) translateX(-20px);
+      background-position: 300px 300px, 400px 400px;
     }
   }
 }
