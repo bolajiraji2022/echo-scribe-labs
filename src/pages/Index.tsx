@@ -9,7 +9,7 @@ import CTA from "@/components/site/CTA";
 import FAQ from "@/components/site/FAQ";
 import Footer from "@/components/site/Footer";
 import BackgroundAnimationToggle from "@/components/site/BackgroundAnimationToggle";
-import { Button } from "@/components/ui/button";
+
 
 const Index = () => {
   const orgJsonLd = {
