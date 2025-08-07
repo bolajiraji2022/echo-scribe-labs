@@ -30,26 +30,26 @@ const Hero = () => {
         }}
       />
 
-      <div className="container flex min-h-[72vh] flex-col items-center justify-center py-20 text-center">
-        <h1 className="font-display text-4xl leading-tight md:text-6xl">
-          AI Voice Agents for Inbound & Outbound
+      <div className="container flex min-h-[50vh] flex-col items-center justify-center py-16 text-center">
+        <h1 className="text-lg font-medium md:text-xl">
+          Automate smart. Scale faster.
         </h1>
-        <p className="mt-4 max-w-2xl text-balance text-muted-foreground md:text-lg">
-          Minimal, fast, and reliable voice automation. Book a demo to see how our agents route calls, qualify leads, and resolve support in minutes.
+        <p className="mt-3 max-w-xl text-balance text-muted-foreground text-sm">
+          Minimal AI-powered automation solutions for modern businesses. Book a demo to see how Otomato streamlines your workflows and boosts productivity.
         </p>
-        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
+        <div className="mt-6 flex flex-col items-center gap-2 sm:flex-row">
           <a href="#cta">
-            <Button variant="hero" size="xl">Book a Demo</Button>
+            <Button variant="hero" size="sm" className="text-xs px-4 py-2 h-8">Book a Demo</Button>
           </a>
           <a href="#use-cases">
-            <Button variant="outline" size="lg">See How It Works</Button>
+            <Button variant="outline" size="sm" className="text-xs px-4 py-2 h-8">See How It Works</Button>
           </a>
         </div>
-        <div className="mt-10 grid grid-cols-2 gap-6 opacity-80 md:grid-cols-4">
-          <div className="text-sm text-muted-foreground">24/7 Coverage</div>
-          <div className="text-sm text-muted-foreground">Natural Conversations</div>
-          <div className="text-sm text-muted-foreground">CRM Ready</div>
-          <div className="text-sm text-muted-foreground">Secure & Compliant</div>
+        <div className="mt-8 grid grid-cols-2 gap-4 opacity-60 md:grid-cols-4">
+          <div className="text-xs text-muted-foreground">Smart Automation</div>
+          <div className="text-xs text-muted-foreground">Easy Integration</div>
+          <div className="text-xs text-muted-foreground">Scalable Solutions</div>
+          <div className="text-xs text-muted-foreground">Secure & Reliable</div>
         </div>
       </div>
     </section>

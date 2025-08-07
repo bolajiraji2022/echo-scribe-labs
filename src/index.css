@@ -106,11 +106,67 @@ All colors MUST be HSL.
   }
 }
 
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  h1 { font-size: 20px; font-weight: 600; }
+  h2 { font-size: 18px; font-weight: 600; }
+  h3 { font-size: 16px; font-weight: 500; }
+  p { font-size: 14px; }
+}
+
 @layer utilities {
   .bg-pixel-tomatoes {
     background-image: url('/images/pixel-tomatoes-tile.png');
     background-size: 160px 160px;
     background-repeat: repeat;
     image-rendering: pixelated;
+    opacity: 0.03;
+  }
+  
+  /* Falling tomato animation */
+  .background-animated::before {
+    content: '';
+    position: fixed;
+    top: -100px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh + 200px);
+    background-image: url('/images/falling-tomato.png');
+    background-size: 20px 20px;
+    background-repeat: repeat;
+    opacity: 0.05;
+    z-index: -2;
+    pointer-events: none;
+    animation: fall 25s linear infinite;
+  }
+  
+  .background-animated::after {
+    content: '';
+    position: fixed;
+    top: -150px;
+    left: 50px;
+    width: 100vw;
+    height: calc(100vh + 200px);
+    background-image: url('/images/falling-tomato.png');
+    background-size: 18px 18px;
+    background-repeat: repeat;
+    opacity: 0.03;
+    z-index: -3;
+    pointer-events: none;
+    animation: fall 30s linear infinite reverse;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100px);
+    }
+    100% {
+      transform: translateY(calc(100vh + 100px));
+    }
   }
 }

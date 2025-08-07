@@ -5,18 +5,20 @@ import VoiceUseCases from "@/components/site/VoiceUseCases";
 import CTA from "@/components/site/CTA";
 import FAQ from "@/components/site/FAQ";
 import Footer from "@/components/site/Footer";
+import BackgroundAnimationToggle from "@/components/site/BackgroundAnimationToggle";
 
 const Index = () => {
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Tomato",
-    description: "AI voice agents for inbound and outbound automation.",
+    name: "Otomato",
+    description: "AI-powered automation solutions for modern businesses.",
     url: "/",
   };
 
   return (
-    <div className="min-h-screen bg-background bg-pixel-tomatoes">
+    <div className="min-h-screen bg-background background-animated">
+      <BackgroundAnimationToggle />
       <Header />
       <main>
         <Hero />

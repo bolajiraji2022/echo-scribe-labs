@@ -1,12 +1,12 @@
 const Footer = () => {
   return (
     <footer className="border-t">
-      <div className="container flex flex-col items-center justify-between gap-4 py-8 md:h-20 md:flex-row">
-        <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Tomato. All rights reserved.</p>
-        <nav className="flex items-center gap-6 text-sm text-muted-foreground">
-          <a href="#features" className="hover:text-foreground">Features</a>
-          <a href="#use-cases" className="hover:text-foreground">Use cases</a>
-          <a href="#faq" className="hover:text-foreground">FAQ</a>
+      <div className="container flex flex-col items-center justify-between gap-3 py-6 md:h-16 md:flex-row">
+        <p className="text-xs text-muted-foreground">© {new Date().getFullYear()} Otomato. All rights reserved.</p>
+        <nav className="flex items-center gap-4 text-xs text-muted-foreground">
+          <a href="#features" className="hover:text-foreground hover:underline">Features</a>
+          <a href="#use-cases" className="hover:text-foreground hover:underline">Use Cases</a>
+          <a href="#faq" className="hover:text-foreground hover:underline">FAQ</a>
         </nav>
       </div>
     </footer>
