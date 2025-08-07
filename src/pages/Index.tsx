@@ -1,12 +1,32 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/site/Header";
+import Hero from "@/components/site/Hero";
+import Features from "@/components/site/Features";
+import VoiceUseCases from "@/components/site/VoiceUseCases";
+import CTA from "@/components/site/CTA";
+import FAQ from "@/components/site/FAQ";
+import Footer from "@/components/site/Footer";
 
 const Index = () => {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Your Company",
+    description: "AI voice agents for inbound and outbound automation.",
+    url: "/",
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background">
+      <Header />
+      <main>
+        <Hero />
+        <Features />
+        <VoiceUseCases />
+        <CTA />
+        <FAQ />
+      </main>
+      <Footer />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
     </div>
   );
 };
