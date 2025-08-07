@@ -6,8 +6,8 @@ const Header = () => {
     <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <img src="/logo.svg" alt="Company logo" className="h-8 w-8" loading="lazy" />
-          <span className="font-display text-lg">Your Company</span>
+          <img src="/lovable-uploads/b8b8fab3-8770-4677-a752-ee163a4fb4e4.png" alt="Tomato AI voice agents logo" className="h-8 w-8" loading="lazy" />
+          <span className="font-display text-lg">Tomato</span>
         </Link>
         <nav className="hidden gap-6 md:flex">
           <a href="#features" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Features</a>

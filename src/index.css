@@ -17,10 +17,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Brand system */
-    --brand-400: 265 88% 67%;
-    --brand-500: 262 83% 57%;
-    --brand-600: 222 89% 56%;
+    --brand-400: 6 80% 64%;
+    --brand-500: 6 72% 52%;
+    --brand-600: 6 75% 44%;
 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;

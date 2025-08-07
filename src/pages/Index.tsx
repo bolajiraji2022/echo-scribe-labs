@@ -10,7 +10,7 @@ const Index = () => {
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "Your Company",
+    name: "Tomato",
     description: "AI voice agents for inbound and outbound automation.",
     url: "/",
   };
