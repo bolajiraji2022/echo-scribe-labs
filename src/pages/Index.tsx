@@ -16,9 +16,17 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background bg-pixel-tomatoes">
+    <div className="min-h-screen bg-background bg-pixel-tomatoes relative">
+      <div className="falling-tomatoes">
+        <div className="falling-tomato"></div>
+        <div className="falling-tomato"></div>
+        <div className="falling-tomato"></div>
+        <div className="falling-tomato"></div>
+        <div className="falling-tomato"></div>
+        <div className="falling-tomato"></div>
+      </div>
       <Header />
-      <main>
+      <main className="relative z-10">
         <Hero />
         <Features />
         <VoiceUseCases />
