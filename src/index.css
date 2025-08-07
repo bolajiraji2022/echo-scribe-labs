@@ -124,4 +124,29 @@ All colors MUST be HSL.
   .bg-pixel-tomatoes {
     display: none;
   }
+
+  /* Pan-out animation utilities */
+  @keyframes pan-out {
+    0% { transform: scale(1.04); }
+    100% { transform: scale(1); }
+  }
+
+  .animate-pan-out {
+    animation: pan-out 400ms ease-out both;
+  }
+
+  .hover-pan-out {
+    transform: scale(1.02);
+    transition: transform 300ms ease;
+    will-change: transform;
+  }
+
+  .hover-pan-out:hover {
+    transform: scale(1);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-pan-out { animation: none; }
+    .hover-pan-out, .hover-pan-out:hover { transform: none; }
+  }
 }
