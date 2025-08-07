@@ -1,13 +1,14 @@
 import { Phone, PlugZap, BarChart3 } from "lucide-react";
+import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const Feature = ({ Icon, title, desc }: { Icon: any; title: string; desc: string }) => (
-  <div className="group rounded-lg border bg-card/50 p-4 shadow-sm transition-all hover:bg-card/80 hover:shadow-md backdrop-blur-sm animate-pan-out hover-pan-out">
+  <ScrollReveal className="group rounded-lg border bg-card/50 p-4 shadow-sm transition-all hover:bg-card/80 hover:shadow-md backdrop-blur-sm animate-pan-out hover-pan-out">
     <div className="mb-2 inline-flex h-8 w-8 items-center justify-center rounded-md bg-gradient-to-r from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white shadow-sm">
       <Icon className="h-4 w-4" />
     </div>
     <h3 className="text-sm font-medium text-foreground">{title}</h3>
     <p className="mt-1 text-xs text-muted-foreground">{desc}</p>
-  </div>
+  </ScrollReveal>
 );
 
 const Features = () => {

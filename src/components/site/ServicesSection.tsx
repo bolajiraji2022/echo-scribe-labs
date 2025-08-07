@@ -1,4 +1,5 @@
 import { Phone, PhoneOutgoing, Users, Clock } from "lucide-react";
+import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const ServiceCard = ({ 
   icon: Icon, 
@@ -11,7 +12,7 @@ const ServiceCard = ({
   description: string;
   features: string[];
 }) => (
-  <div className="group rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all duration-200 animate-pan-out hover-pan-out">
+  <ScrollReveal className="group rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all duration-200 animate-pan-out hover-pan-out">
     <div className="flex items-center gap-3 mb-4">
       <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white">
         <Icon className="h-5 w-5" />
@@ -27,7 +28,7 @@ const ServiceCard = ({
         </li>
       ))}
     </ul>
-  </div>
+  </ScrollReveal>
 );
 
 const ServicesSection = () => {
