@@ -128,7 +128,20 @@ All colors MUST be HSL.
     opacity: 0.03;
   }
   
-  /* Falling tomato animation */
+  /* Ensure all UI elements are above background animations */
+  .background-animated > * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .background-animated header,
+  .background-animated main,
+  .background-animated footer {
+    position: relative;
+    z-index: 10;
+  }
+  
+  /* Falling tomato animation - barely visible background layer */
   .background-animated::before {
     content: '';
     position: fixed;
@@ -137,30 +150,48 @@ All colors MUST be HSL.
     width: 100vw;
     height: calc(100vh + 200px);
     background-image: url('/images/falling-tomato.png');
-    background-size: 20px 20px;
+    background-size: 24px 24px;
     background-repeat: repeat;
-    opacity: 0.08;
-    z-index: -2;
+    opacity: 0.06;
+    z-index: -10;
     pointer-events: none;
-    animation: fall 25s linear infinite;
-    filter: brightness(0.7) hue-rotate(15deg);
+    animation: fall 28s linear infinite;
+    filter: brightness(0.4) contrast(0.8);
   }
   
   .background-animated::after {
     content: '';
     position: fixed;
-    top: -150px;
-    left: 50px;
+    top: -120px;
+    left: 40px;
     width: 100vw;
     height: calc(100vh + 200px);
     background-image: url('/images/falling-tomato.png');
-    background-size: 18px 18px;
+    background-size: 16px 16px;
     background-repeat: repeat;
-    opacity: 0.05;
-    z-index: -3;
+    opacity: 0.04;
+    z-index: -11;
     pointer-events: none;
-    animation: fall 30s linear infinite reverse;
-    filter: brightness(0.6) hue-rotate(30deg);
+    animation: fall 35s linear infinite reverse;
+    filter: brightness(0.3) contrast(0.6);
+  }
+  
+  /* Additional subtle layer for depth */
+  .background-animated .container::before {
+    content: '';
+    position: fixed;
+    top: -80px;
+    left: -20px;
+    width: 100vw;
+    height: calc(100vh + 160px);
+    background-image: url('/images/falling-tomato.png');
+    background-size: 12px 12px;
+    background-repeat: repeat;
+    opacity: 0.03;
+    z-index: -12;
+    pointer-events: none;
+    animation: fall 22s linear infinite;
+    filter: brightness(0.2) blur(0.5px);
   }
   
   @keyframes fall {
