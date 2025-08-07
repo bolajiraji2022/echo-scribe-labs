@@ -60,9 +60,9 @@ const InteractiveBackground: React.FC = () => {
 
       ctx.clearRect(0, 0, size.w, size.h);
 
-      // Lines
-      ctx.lineWidth = 0.8;
-      ctx.strokeStyle = `hsla(${brand500.h}, ${brand500.s}, ${brand500.l}, 0.28)`;
+      // Lines (brighter)
+      ctx.lineWidth = 1.3;
+      ctx.strokeStyle = `hsla(${brand500.h}, ${brand500.s}, ${brand500.l}, 0.5)`;
 
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
@@ -98,7 +98,10 @@ const InteractiveBackground: React.FC = () => {
         }
       }
 
-      // Connections and nodes
+      // Connections (glowing)
+      ctx.save();
+      ctx.shadowColor = `hsla(${brand500.h}, ${brand500.s}, ${brand500.l}, 0.6)`;
+      ctx.shadowBlur = 8;
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
         for (let j = i + 1; j < particles.length; j++) {
@@ -106,8 +109,8 @@ const InteractiveBackground: React.FC = () => {
           const dx = p.x - q.x;
           const dy = p.y - q.y;
           const dist = Math.hypot(dx, dy);
-          if (dist < 110) {
-            ctx.globalAlpha = Math.max(0, 1 - dist / 110) * 0.8;
+          if (dist < 150) {
+            ctx.globalAlpha = Math.max(0, 1 - dist / 150) * 0.9;
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(q.x, q.y);
@@ -115,15 +118,25 @@ const InteractiveBackground: React.FC = () => {
           }
         }
       }
+      ctx.restore();
 
       ctx.globalAlpha = 1;
+      ctx.save();
+      ctx.shadowColor = `hsla(${brand500.h}, ${brand500.s}, ${brand500.l}, 0.45)`;
+      ctx.shadowBlur = 6;
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
+        const dx = mouse.x - p.x;
+        const dy = mouse.y - p.y;
+        const d = Math.hypot(dx, dy);
+        const pulse = mouse.active ? Math.max(0, 1 - (d / 130)) * 1.2 : 0;
+        const r = p.r + pulse;
         ctx.beginPath();
-        ctx.fillStyle = `hsla(${brand500.h}, ${brand500.s}, ${brand500.l}, ${mouse.active ? 0.55 : 0.4})`;
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `hsla(${brand500.h}, ${brand500.s}, ${brand500.l}, ${mouse.active ? 0.7 : 0.5})`;
+        ctx.arc(p.x, p.y, r, 0, Math.PI * 2);
         ctx.fill();
       }
+      ctx.restore();
 
       rafRef.current = requestAnimationFrame(draw);
     };
