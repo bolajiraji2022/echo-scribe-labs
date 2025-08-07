@@ -26,7 +26,7 @@ const Hero = () => {
         className="pointer-events-none absolute inset-0 -z-10"
         style={{
           background:
-            "radial-gradient(600px circle at var(--mx) var(--my), hsl(var(--brand-400)/0.25), transparent 40%)",
+            "radial-gradient(600px circle at var(--mx) var(--my), hsl(var(--brand-400)/0.15), transparent 40%)",
         }}
       />
 

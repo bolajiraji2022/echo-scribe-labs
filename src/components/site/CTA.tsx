@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const CTA = () => {
   return (
-    <section id="cta" className="relative border-t bg-gradient-to-b from-transparent to-accent/40">
+    <section id="cta" className="relative border-t bg-gradient-to-b from-transparent to-card/40 backdrop-blur-sm">
       <div className="container py-12 text-center">
         <h2 className="text-lg font-medium">Ready to automate your workflows?</h2>
         <p className="mt-1 text-muted-foreground text-sm">Get a tailored demo and roadmap in under 30 minutes.</p>

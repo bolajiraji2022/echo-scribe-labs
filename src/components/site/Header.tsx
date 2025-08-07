@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-40 w-full border-b bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-40 w-full border-b bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/80">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/lovable-uploads/b8b8fab3-8770-4677-a752-ee163a4fb4e4.png" alt="Otomato automation logo" className="h-10 w-10" loading="lazy" />
+          <img src="/lovable-uploads/d7624f59-7bc1-4376-89b2-000b9d700093.png" alt="Otomato automation logo" className="h-8 w-auto" loading="lazy" />
         </Link>
         <div className="flex items-center gap-8">
           <nav className="hidden gap-6 md:flex">
