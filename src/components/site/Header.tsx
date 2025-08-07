@@ -10,8 +10,9 @@ const Header = () => {
         </Link>
         <div className="flex items-center gap-8">
           <nav className="hidden gap-6 md:flex">
+            <a href="#process" className="text-xs text-muted-foreground hover:text-foreground transition-colors hover:underline">Process</a>
             <a href="#features" className="text-xs text-muted-foreground hover:text-foreground transition-colors hover:underline">Features</a>
-            <a href="#use-cases" className="text-xs text-muted-foreground hover:text-foreground transition-colors hover:underline">Use Cases</a>
+            <a href="#services" className="text-xs text-muted-foreground hover:text-foreground transition-colors hover:underline">Services</a>
             <a href="#faq" className="text-xs text-muted-foreground hover:text-foreground transition-colors hover:underline">FAQ</a>
           </nav>
           <div className="flex items-center gap-2">

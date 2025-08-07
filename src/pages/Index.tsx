@@ -1,18 +1,22 @@
 import Header from "@/components/site/Header";
 import Hero from "@/components/site/Hero";
+import AboutSection from "@/components/site/AboutSection";
+import ProcessSection from "@/components/site/ProcessSection";
 import Features from "@/components/site/Features";
+import ServicesSection from "@/components/site/ServicesSection";
 import VoiceUseCases from "@/components/site/VoiceUseCases";
 import CTA from "@/components/site/CTA";
 import FAQ from "@/components/site/FAQ";
 import Footer from "@/components/site/Footer";
 import BackgroundAnimationToggle from "@/components/site/BackgroundAnimationToggle";
+import { Button } from "@/components/ui/button";
 
 const Index = () => {
   const orgJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Otomato",
-    description: "AI-powered automation solutions for modern businesses.",
+    description: "24/7 AI voice agents for inbound and outbound automation. Transform your business communication.",
     url: "/",
   };
 
@@ -22,7 +26,10 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
+        <AboutSection />
+        <ProcessSection />
         <Features />
+        <ServicesSection />
         <VoiceUseCases />
         <CTA />
         <FAQ />

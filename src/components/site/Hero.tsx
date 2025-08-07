@@ -30,26 +30,30 @@ const Hero = () => {
         }}
       />
 
-      <div className="container flex min-h-[50vh] flex-col items-center justify-center py-16 text-center">
-        <h1 className="text-lg font-medium md:text-xl">
-          Automate smart. Scale faster.
+      <div className="container flex min-h-[65vh] flex-col items-center justify-center py-16 text-center relative">
+        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-brand-500/20 bg-brand-500/10 px-3 py-1">
+          <div className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></div>
+          <span className="text-xs font-medium text-brand-400">New: 24/7 Voice AI Agents</span>
+        </div>
+        <h1 className="text-2xl font-semibold leading-tight md:text-4xl max-w-4xl">
+          Stop missing calls while you sleep
         </h1>
-        <p className="mt-3 max-w-xl text-balance text-muted-foreground text-sm">
-          Minimal AI-powered automation solutions for modern businesses. Book a demo to see how Otomato streamlines your workflows and boosts productivity.
+        <p className="mt-4 max-w-2xl text-balance text-muted-foreground text-sm leading-relaxed">
+          We <strong className="text-foreground">transform</strong> your business into a 24/7 customer-engaging machine with AI voice agents that never rest.
         </p>
-        <div className="mt-6 flex flex-col items-center gap-2 sm:flex-row">
-          <a href="#cta">
-            <Button variant="hero" size="sm" className="text-xs px-4 py-2 h-8">Book a Demo</Button>
+        <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
+          <a href="#process">
+            <Button variant="outline" size="sm" className="text-xs px-4 py-2 h-8 border-brand-500/30 hover:bg-brand-500/10">See How We Do It</Button>
           </a>
-          <a href="#use-cases">
-            <Button variant="outline" size="sm" className="text-xs px-4 py-2 h-8">See How It Works</Button>
+          <a href="#cta">
+            <Button variant="hero" size="sm" className="text-xs px-4 py-2 h-8">Start Your Transformation</Button>
           </a>
         </div>
-        <div className="mt-8 grid grid-cols-2 gap-4 opacity-60 md:grid-cols-4">
-          <div className="text-xs text-muted-foreground">Smart Automation</div>
-          <div className="text-xs text-muted-foreground">Easy Integration</div>
-          <div className="text-xs text-muted-foreground">Scalable Solutions</div>
-          <div className="text-xs text-muted-foreground">Secure & Reliable</div>
+        <div className="mt-12 grid grid-cols-2 gap-6 opacity-60 md:grid-cols-4 text-center">
+          <div className="text-xs text-muted-foreground">Inbound Reception</div>
+          <div className="text-xs text-muted-foreground">Outbound Sales</div>
+          <div className="text-xs text-muted-foreground">Lead Qualification</div>
+          <div className="text-xs text-muted-foreground">24/7 Availability</div>
         </div>
       </div>
     </section>
