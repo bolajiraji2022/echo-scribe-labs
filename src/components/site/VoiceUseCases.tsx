@@ -12,7 +12,7 @@ const VoiceUseCases = () => {
         <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block relative z-10">Use Cases</h2>
       </div>
       <div className="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-        <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
+        <div className="rounded-xl glass-card p-6 animate-pan-out hover-pan-out">
           <h3 className="text-sm font-medium text-foreground">Workflow Automation</h3>
           <p className="mt-1 text-muted-foreground text-xs">Streamline your business processes with Otomato's intelligent automation.</p>
           <ul className="mt-3 space-y-1">
@@ -21,7 +21,7 @@ const VoiceUseCases = () => {
             <Bullet>Integration with existing business tools</Bullet>
           </ul>
         </div>
-        <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
+        <div className="rounded-xl glass-card p-6 animate-pan-out hover-pan-out">
           <h3 className="text-sm font-medium text-foreground">Customer Experience</h3>
           <p className="mt-1 text-muted-foreground text-xs">Enhance customer interactions with Otomato's AI-powered solutions.</p>
           <ul className="mt-3 space-y-1">
@@ -30,7 +30,7 @@ const VoiceUseCases = () => {
             <Bullet>Real-time analytics and optimization</Bullet>
           </ul>
         </div>
-        <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
+        <div className="rounded-xl glass-card p-6 animate-pan-out hover-pan-out">
           <h3 className="text-sm font-medium text-foreground">Sales & Lead Generation</h3>
           <p className="mt-1 text-muted-foreground text-xs">Automate your sales processes and qualify leads with AI voice agents.</p>
           <ul className="mt-3 space-y-1">
@@ -39,7 +39,7 @@ const VoiceUseCases = () => {
             <Bullet>Sales pipeline management and tracking</Bullet>
           </ul>
         </div>
-        <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
+        <div className="rounded-xl glass-card p-6 animate-pan-out hover-pan-out">
           <h3 className="text-sm font-medium text-foreground">Healthcare & Medical</h3>
           <p className="mt-1 text-muted-foreground text-xs">Enhance healthcare communication with automated patient interactions.</p>
           <ul className="mt-3 space-y-1">
