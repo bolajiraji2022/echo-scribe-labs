@@ -10,7 +10,7 @@ const VoiceUseCases = () => {
       <div className="grid items-start gap-6 md:grid-cols-2">
         <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
           <h3 className="text-sm font-medium text-foreground">Workflow Automation</h3>
-          <p className="mt-1 text-muted-foreground text-xs">Streamline your business processes with intelligent automation.</p>
+          <p className="mt-1 text-muted-foreground text-xs">Streamline your business processes with Otomato's intelligent automation.</p>
           <ul className="mt-3 space-y-1">
             <Bullet>Smart task routing and process optimization</Bullet>
             <Bullet>Data validation and automated decision making</Bullet>
@@ -19,7 +19,7 @@ const VoiceUseCases = () => {
         </div>
         <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
           <h3 className="text-sm font-medium text-foreground">Customer Experience</h3>
-          <p className="mt-1 text-muted-foreground text-xs">Enhance customer interactions with AI-powered solutions.</p>
+          <p className="mt-1 text-muted-foreground text-xs">Enhance customer interactions with Otomato's AI-powered solutions.</p>
           <ul className="mt-3 space-y-1">
             <Bullet>Automated response systems and support</Bullet>
             <Bullet>Personalized customer journey automation</Bullet>

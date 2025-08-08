@@ -41,7 +41,7 @@ const ProcessSection = () => {
           Your voice AI transformation in three stages
         </h3>
         <p className="text-sm text-muted-foreground">
-          Most Voice Solutions Break. Ours <strong className="text-foreground">Adapt</strong>.
+          Most Voice Solutions Break. Otomato's <strong className="text-foreground">Adapt</strong>.
         </p>
       </div>
 
@@ -50,7 +50,7 @@ const ProcessSection = () => {
           number="1"
           title="Discovery & Voice Analysis"
           description="Deep dive into your current call handling, identifying missed opportunities and bottlenecks."
-          details="We analyze your call patterns, peak hours, common inquiries, and customer journey to design AI agents that perfectly match your business needs. Your team's expertise guides every decision."
+          details="Otomato analyzes your call patterns, peak hours, common inquiries, and customer journey to design AI agents that perfectly match your business needs. Your team's expertise guides every decision."
           icon={Mic}
         />
         

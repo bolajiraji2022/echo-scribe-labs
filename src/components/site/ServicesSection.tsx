@@ -48,7 +48,7 @@ const ServicesSection = () => {
         <ServiceCard
           icon={Phone}
           title="24/7 AI Receptionist"
-          description="Never miss another call. Our AI receptionists handle inquiries, route calls, and capture leads around the clock with human-like conversation."
+          description="Never miss another call. Otomato's AI receptionists handle inquiries, route calls, and capture leads around the clock with human-like conversation."
           features={[
             "Intelligent call routing and screening",
             "Appointment scheduling and calendar integration",
@@ -61,7 +61,7 @@ const ServicesSection = () => {
         <ServiceCard
           icon={PhoneOutgoing}
           title="Outbound Sales Agents"
-          description="Scale your sales outreach with AI agents that make personalized calls, qualify prospects, and book meetings while you focus on closing deals."
+          description="Scale your sales outreach with Otomato's AI agents that make personalized calls, qualify prospects, and book meetings while you focus on closing deals."
           features={[
             "Personalized prospect outreach campaigns",
             "Lead qualification and scoring",

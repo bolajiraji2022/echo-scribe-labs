@@ -16,7 +16,7 @@ const Features = () => {
     <section id="features" className="container py-12">
       <div className="mb-8 text-center">
         <h2 className="text-lg font-medium">Designed for performance</h2>
-        <p className="mt-1 text-muted-foreground text-sm">Everything you need to deploy automation solutions.</p>
+        <p className="mt-1 text-muted-foreground text-sm">Everything you need to deploy Otomato automation solutions.</p>
       </div>
 
       <div className="grid gap-6 md:grid-cols-3">

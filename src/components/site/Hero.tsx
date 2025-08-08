@@ -39,7 +39,7 @@ const Hero = () => {
           Stop missing calls while you sleep
         </h1>
         <p className="mt-4 max-w-2xl text-balance text-muted-foreground text-sm leading-relaxed">
-          We <strong className="text-foreground">transform</strong> your business into a 24/7 customer-engaging machine with AI voice agents that never rest.
+          Otomato <strong className="text-foreground">transforms</strong> your business into a 24/7 customer-engaging machine with AI voice agents that never rest.
         </p>
         <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
           <a href="#process">
