@@ -1,4 +1,5 @@
 import { Mic, Settings, Rocket } from "lucide-react";
+import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const ProcessStep = ({ 
   number, 
@@ -13,7 +14,7 @@ const ProcessStep = ({
   details: string;
   icon: any;
 }) => (
-  <div className="group">
+  <ScrollReveal delay={parseInt(number) * 200} className="group">
     <div className="flex items-start gap-4">
       <div className="flex-shrink-0">
         <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white">
@@ -29,13 +30,13 @@ const ProcessStep = ({
         <p className="text-xs text-muted-foreground/80 leading-relaxed">{details}</p>
       </div>
     </div>
-  </div>
+  </ScrollReveal>
 );
 
 const ProcessSection = () => {
   return (
     <section id="process" className="container py-16">
-      <div className="text-center mb-12">
+      <ScrollReveal className="text-center mb-12">
         <h2 className="text-lg font-semibold mb-2">Process</h2>
         <h3 className="text-xl font-semibold md:text-2xl mb-4">
           Your voice AI transformation in three stages
@@ -43,7 +44,7 @@ const ProcessSection = () => {
         <p className="text-sm text-muted-foreground">
           Most Voice Solutions Break. Otomato's <strong className="text-foreground">Adapt</strong>.
         </p>
-      </div>
+      </ScrollReveal>
 
       <div className="max-w-4xl mx-auto space-y-12">
         <ProcessStep

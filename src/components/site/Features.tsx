@@ -14,15 +14,21 @@ const Feature = ({ Icon, title, desc }: { Icon: any; title: string; desc: string
 const Features = () => {
   return (
     <section id="features" className="container py-12">
-      <div className="mb-8 text-center">
+      <ScrollReveal className="mb-8 text-center">
         <h2 className="text-lg font-medium">Designed for performance</h2>
         <p className="mt-1 text-muted-foreground text-sm">Everything you need to deploy Otomato automation solutions.</p>
-      </div>
+      </ScrollReveal>
 
       <div className="grid gap-6 md:grid-cols-3">
-        <Feature Icon={Phone} title="Smart workflows" desc="Intelligent automation that adapts to your business processes and scales with growth." />
-        <Feature Icon={PlugZap} title="Easy integration" desc="Connect to your existing tools and systems in minutes, not hours." />
-        <Feature Icon={BarChart3} title="Performance insights" desc="Real-time analytics and metrics to optimize your automation performance." />
+        <ScrollReveal delay={100}>
+          <Feature Icon={Phone} title="Smart workflows" desc="Intelligent automation that adapts to your business processes and scales with growth." />
+        </ScrollReveal>
+        <ScrollReveal delay={200}>
+          <Feature Icon={PlugZap} title="Easy integration" desc="Connect to your existing tools and systems in minutes, not hours." />
+        </ScrollReveal>
+        <ScrollReveal delay={300}>
+          <Feature Icon={BarChart3} title="Performance insights" desc="Real-time analytics and metrics to optimize your automation performance." />
+        </ScrollReveal>
       </div>
     </section>
   );
