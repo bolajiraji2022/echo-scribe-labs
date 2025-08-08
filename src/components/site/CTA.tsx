@@ -17,12 +17,12 @@ const CTA = () => {
         </ScrollReveal>
         <ScrollReveal delay={200} className="mt-6 flex items-center justify-center gap-3">
           <a href="mailto:hello@otomato.com">
-            <Button variant="hero" size="sm" className="text-sm px-6 py-3 h-10 transition-all duration-300 hover:scale-105 hover:shadow-lg animate-pulse">
+            <Button variant="hero" size="sm" className="text-sm px-6 py-3 h-10">
               Start Your Transformation
             </Button>
           </a>
           <a href="#services">
-            <Button variant="outline" size="sm" className="text-sm px-6 py-3 h-10 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <Button variant="outline" size="sm" className="text-sm px-6 py-3 h-10">
               Explore Services
             </Button>
           </a>
