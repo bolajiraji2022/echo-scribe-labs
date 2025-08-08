@@ -4,10 +4,11 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 const CTA = () => {
   return (
     <section id="cta" className="relative">
+      <div className="absolute inset-0 bg-gradient-radial from-red-500/20 via-transparent to-transparent opacity-70 pointer-events-none"></div>
       <div className="container py-12">
         <ScrollReveal className="text-center bg-card/20 backdrop-blur-sm border border-border rounded-3xl px-8 py-10 max-w-2xl mx-auto">
           <ScrollReveal>
-            <h2 className="text-2xl font-bold bg-gradient-to-r from-foreground via-primary to-brand-500 bg-clip-text text-transparent">
+            <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
               Ready to transform your communication?
             </h2>
           </ScrollReveal>

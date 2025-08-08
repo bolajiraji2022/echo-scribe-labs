@@ -34,10 +34,12 @@ const ProcessStep = ({
 
 const ProcessSection = () => {
   return (
-    <section id="process" className="container py-16">
+    <section id="process" className="relative py-16">
+      <div className="absolute inset-0 bg-gradient-radial from-primary/10 via-transparent to-transparent opacity-50 pointer-events-none"></div>
+      <div className="container relative z-10">
       <ScrollReveal className="text-center mb-12">
         <h2 className="text-lg mb-6 border border-border rounded-md px-3 py-1 inline-block">Process</h2>
-        <h3 className="text-xl font-semibold md:text-2xl mb-4 bg-gradient-to-r from-foreground via-primary to-brand-500 bg-clip-text text-transparent">
+        <h3 className="text-xl font-semibold md:text-2xl mb-4">
           Your voice AI transformation in three stages
         </h3>
         <p className="text-sm text-muted-foreground">
@@ -69,6 +71,7 @@ const ProcessSection = () => {
           icon={Rocket}
           delay={400}
         />
+      </div>
       </div>
     </section>
   );
