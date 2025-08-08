@@ -5,7 +5,7 @@ const FAQ = () => {
   return (
     <section id="faq" className="container py-12">
       <ScrollReveal className="mb-6 text-center">
-        <h2 className="text-lg font-medium">Frequently Asked Questions</h2>
+        <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block">Frequently Asked Questions</h2>
       </ScrollReveal>
       <ScrollReveal delay={200} className="mx-auto w-full max-w-2xl">
         <Accordion type="single" collapsible>

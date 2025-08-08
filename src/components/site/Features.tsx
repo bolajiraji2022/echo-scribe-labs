@@ -15,7 +15,7 @@ const Features = () => {
   return (
     <section id="features" className="container py-12">
       <ScrollReveal className="mb-8 text-center">
-        <h2 className="text-lg font-medium">Designed for performance</h2>
+        <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block">Designed for performance</h2>
         <p className="mt-1 text-muted-foreground text-sm">Everything you need to deploy Otomato automation solutions.</p>
       </ScrollReveal>
 

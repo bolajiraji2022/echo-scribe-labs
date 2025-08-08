@@ -35,7 +35,7 @@ const ServicesSection = () => {
   return (
     <section id="services" className="container py-16">
       <ScrollReveal className="text-center mb-12">
-        <h2 className="text-lg font-semibold mb-2">Services</h2>
+        <h2 className="text-lg mb-2 border border-border rounded-md px-3 py-1 inline-block">Services</h2>
         <h3 className="text-xl font-semibold md:text-2xl mb-4">
           If a human can answer it, we can automate it
         </h3>

@@ -7,6 +7,9 @@ const Bullet = ({ children }: { children: React.ReactNode }) => (
 const VoiceUseCases = () => {
   return (
     <section id="use-cases" className="container py-12">
+      <div className="text-center mb-8">
+        <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block mb-4">Use Cases</h2>
+      </div>
       <div className="grid items-start gap-6 md:grid-cols-2">
         <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
           <h3 className="text-sm font-medium text-foreground">Workflow Automation</h3>
