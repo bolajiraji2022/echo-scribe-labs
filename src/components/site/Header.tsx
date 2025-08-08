@@ -6,7 +6,7 @@ const Header = () => {
     <header className="glass-nav sticky top-0 z-40 w-full">
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center">
-          <img src="/lovable-uploads/90b9af9d-d624-460c-a6c2-69d5a7149945.png" alt="Otomato automation logo" className="h-8 w-auto" loading="lazy" />
+          <img src="/lovable-uploads/90b9af9d-d624-460c-a6c2-69d5a7149945.png" alt="Otomato automation logo" className="h-12 w-auto" loading="lazy" />
         </Link>
         <div className="flex items-center gap-8">
           <nav className="hidden gap-6 md:flex">
