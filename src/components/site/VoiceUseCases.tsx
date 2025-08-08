@@ -10,7 +10,7 @@ const VoiceUseCases = () => {
       <div className="text-center mb-8">
         <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block">Use Cases</h2>
       </div>
-      <div className="grid items-start gap-6 md:grid-cols-2">
+      <div className="grid items-start gap-6 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
         <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
           <h3 className="text-sm font-medium text-foreground">Workflow Automation</h3>
           <p className="mt-1 text-muted-foreground text-xs">Streamline your business processes with Otomato's intelligent automation.</p>
@@ -27,6 +27,24 @@ const VoiceUseCases = () => {
             <Bullet>Automated response systems and support</Bullet>
             <Bullet>Personalized customer journey automation</Bullet>
             <Bullet>Real-time analytics and optimization</Bullet>
+          </ul>
+        </div>
+        <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
+          <h3 className="text-sm font-medium text-foreground">Sales & Lead Generation</h3>
+          <p className="mt-1 text-muted-foreground text-xs">Automate your sales processes and qualify leads with AI voice agents.</p>
+          <ul className="mt-3 space-y-1">
+            <Bullet>Automated outbound sales calls and follow-ups</Bullet>
+            <Bullet>Lead qualification and appointment scheduling</Bullet>
+            <Bullet>Sales pipeline management and tracking</Bullet>
+          </ul>
+        </div>
+        <div className="rounded-lg border bg-card/50 p-6 shadow-sm backdrop-blur-sm hover:bg-card/80 transition-all">
+          <h3 className="text-sm font-medium text-foreground">Healthcare & Medical</h3>
+          <p className="mt-1 text-muted-foreground text-xs">Enhance healthcare communication with automated patient interactions.</p>
+          <ul className="mt-3 space-y-1">
+            <Bullet>Appointment reminders and confirmations</Bullet>
+            <Bullet>Patient intake and medical history collection</Bullet>
+            <Bullet>Insurance verification and billing support</Bullet>
           </ul>
         </div>
       </div>
