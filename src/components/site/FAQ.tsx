@@ -3,8 +3,9 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="container py-12">
-      <ScrollReveal className="mb-6 text-center">
+    <section id="faq" className="w-full py-12 bg-gradient-to-b from-primary/10 to-background">
+      <div className="container">
+        <ScrollReveal className="mb-6 text-center">
         <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block mb-3">Frequently Asked Questions</h2>
       </ScrollReveal>
       <ScrollReveal delay={200} className="mx-auto w-full max-w-2xl bg-card/20 backdrop-blur-sm border border-border rounded-3xl px-8 py-10">
@@ -26,7 +27,8 @@ const FAQ = () => {
             <AccordionContent className="text-xs">Our AI agents use advanced voice synthesis that's virtually indistinguishable from human conversation. We can even match your brand's tone and style for consistent customer experiences.</AccordionContent>
           </AccordionItem>
         </Accordion>
-      </ScrollReveal>
+        </ScrollReveal>
+      </div>
     </section>
   );
 };

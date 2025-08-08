@@ -34,10 +34,8 @@ const Index = () => {
         <ServicesSection />
         <VoiceUseCases />
         <CTA />
-        <div className="bg-gradient-to-br from-background via-background/95 to-primary/5">
-          <ContactForm />
-          <FAQ />
-        </div>
+        <ContactForm />
+        <FAQ />
       </main>
       <Footer />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }} />
