@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const CTA = () => {
   return (
-    <section id="cta" className="relative border-t bg-gradient-to-b from-transparent to-card/40 backdrop-blur-sm">
+    <section id="cta" className="relative">
       <div className="container py-12">
         <ScrollReveal className="text-center bg-card/20 backdrop-blur-sm border border-border rounded-3xl px-8 py-10 max-w-2xl mx-auto">
           <ScrollReveal>
