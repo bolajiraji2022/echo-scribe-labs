@@ -5,14 +5,26 @@ const CTA = () => {
   return (
     <section id="cta" className="relative border-t bg-gradient-to-b from-transparent to-card/40 backdrop-blur-sm">
       <ScrollReveal className="container py-12 text-center">
-        <h2 className="text-lg font-medium">Ready to transform your communication?</h2>
-        <p className="mt-1 text-muted-foreground text-sm">Get a tailored Otomato demo and see your AI voice agents in action in under 30 minutes.</p>
-        <ScrollReveal delay={200} className="mt-4 flex items-center justify-center gap-2">
+        <ScrollReveal>
+          <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-pulse">
+            Ready to transform your communication?
+          </h2>
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <p className="mt-3 text-muted-foreground text-base transition-all duration-500 hover:text-foreground">
+            Get a tailored Otomato demo and see your AI voice agents in action in under 30 minutes.
+          </p>
+        </ScrollReveal>
+        <ScrollReveal delay={200} className="mt-6 flex items-center justify-center gap-3">
           <a href="mailto:hello@otomato.com">
-            <Button variant="hero" size="sm" className="text-xs px-4 py-2 h-8">Start Your Transformation</Button>
+            <Button variant="hero" size="sm" className="text-sm px-6 py-3 h-10 transition-all duration-300 hover:scale-105 hover:shadow-lg animate-pulse">
+              Start Your Transformation
+            </Button>
           </a>
           <a href="#services">
-            <Button variant="outline" size="sm" className="text-xs px-4 py-2 h-8">Explore Services</Button>
+            <Button variant="outline" size="sm" className="text-sm px-6 py-3 h-10 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+              Explore Services
+            </Button>
           </a>
         </ScrollReveal>
       </ScrollReveal>

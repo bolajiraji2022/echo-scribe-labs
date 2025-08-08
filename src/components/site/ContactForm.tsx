@@ -9,6 +9,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const contactSchema = z.object({
   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -59,112 +60,114 @@ const ContactForm = () => {
   return (
     <section className="py-24 px-4">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-12">
+        <ScrollReveal className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
           <p className="text-xl text-muted-foreground">
             Ready to transform your business with AI voice automation? Let's talk.
           </p>
-        </div>
+        </ScrollReveal>
         
-        <Card className="mx-auto max-w-2xl bg-red-500 border-red-600">{" "}
-          <CardHeader>
-            <CardTitle className="text-red-foreground">Contact Us</CardTitle>
-            <CardDescription className="text-red-foreground/80">
-              Fill out the form below and we'll get back to you within 24 hours.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Form {...form}>
-              <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-red-foreground">Name *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="Your full name" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                  
-                  <FormField
-                    control={form.control}
-                    name="email"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-red-foreground">Email *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="your.email@company.com" type="email" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
+        <ScrollReveal delay={200}>
+          <Card className="mx-auto max-w-2xl bg-red-500 border-red-600">
+            <CardHeader>
+              <CardTitle className="text-red-foreground">Contact Us</CardTitle>
+              <CardDescription className="text-red-foreground/80">
+                Fill out the form below and we'll get back to you within 24 hours.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-red-foreground">Name *</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Your full name" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="email"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-red-foreground">Email *</FormLabel>
+                          <FormControl>
+                            <Input placeholder="your.email@company.com" type="email" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
+                      name="company"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-red-foreground">Company</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Your company name" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                    
+                    <FormField
+                      control={form.control}
+                      name="phone"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel className="text-red-foreground">Phone *</FormLabel>
+                          <FormControl>
+                            <Input placeholder="(555) 123-4567" type="tel" {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
+
                   <FormField
                     control={form.control}
-                    name="company"
+                    name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-red-foreground">Company</FormLabel>
+                        <FormLabel className="text-red-foreground">Message</FormLabel>
                         <FormControl>
-                          <Input placeholder="Your company name" {...field} />
+                          <Textarea 
+                            placeholder="Tell us about your project or any questions you have..."
+                            className="min-h-[120px]"
+                            {...field} 
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  
-                  <FormField
-                    control={form.control}
-                    name="phone"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel className="text-red-foreground">Phone *</FormLabel>
-                        <FormControl>
-                          <Input placeholder="(555) 123-4567" type="tel" {...field} />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                </div>
 
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-red-foreground">Message</FormLabel>
-                      <FormControl>
-                        <Textarea 
-                          placeholder="Tell us about your project or any questions you have..."
-                          className="min-h-[120px]"
-                          {...field} 
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <Button 
-                  type="submit" 
-                  className="w-full bg-red-foreground text-red-600 hover:bg-red-foreground/90" 
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </Button>
-              </form>
-            </Form>
-          </CardContent>
-        </Card>
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-red-foreground text-red-600 hover:bg-red-foreground/90 transition-all duration-300 hover:scale-105" 
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? "Sending..." : "Send Message"}
+                  </Button>
+                </form>
+              </Form>
+            </CardContent>
+          </Card>
+        </ScrollReveal>
       </div>
     </section>
   );
