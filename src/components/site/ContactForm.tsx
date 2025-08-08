@@ -68,10 +68,10 @@ const ContactForm = () => {
         </ScrollReveal>
         
         <ScrollReveal delay={200}>
-          <Card className="mx-auto max-w-2xl bg-red-500 border-red-600">
+          <Card className="mx-auto max-w-2xl glass-card border">
             <CardHeader>
-              <CardTitle className="text-red-foreground">Contact Us</CardTitle>
-              <CardDescription className="text-red-foreground/80">
+              <CardTitle className="text-foreground">Contact Us</CardTitle>
+              <CardDescription className="text-muted-foreground">
                 Fill out the form below and we'll get back to you within 24 hours.
               </CardDescription>
             </CardHeader>
@@ -84,7 +84,7 @@ const ContactForm = () => {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-red-foreground">Name *</FormLabel>
+                          <FormLabel className="text-foreground">Name *</FormLabel>
                           <FormControl>
                             <Input placeholder="Your full name" {...field} />
                           </FormControl>
@@ -98,7 +98,7 @@ const ContactForm = () => {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-red-foreground">Email *</FormLabel>
+                          <FormLabel className="text-foreground">Email *</FormLabel>
                           <FormControl>
                             <Input placeholder="your.email@company.com" type="email" {...field} />
                           </FormControl>
@@ -114,7 +114,7 @@ const ContactForm = () => {
                       name="company"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-red-foreground">Company</FormLabel>
+                          <FormLabel className="text-foreground">Company</FormLabel>
                           <FormControl>
                             <Input placeholder="Your company name" {...field} />
                           </FormControl>
@@ -128,7 +128,7 @@ const ContactForm = () => {
                       name="phone"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel className="text-red-foreground">Phone *</FormLabel>
+                          <FormLabel className="text-foreground">Phone *</FormLabel>
                           <FormControl>
                             <Input placeholder="(555) 123-4567" type="tel" {...field} />
                           </FormControl>
@@ -143,7 +143,7 @@ const ContactForm = () => {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel className="text-red-foreground">Message</FormLabel>
+                        <FormLabel className="text-foreground">Message</FormLabel>
                         <FormControl>
                           <Textarea 
                             placeholder="Tell us about your project or any questions you have..."
@@ -158,7 +158,7 @@ const ContactForm = () => {
 
                   <Button 
                     type="submit" 
-                    className="w-full bg-red-foreground text-red-600 hover:bg-red-foreground/90 transition-all duration-300 hover:scale-105" 
+                    className="w-full transition-all duration-300 hover:scale-105" 
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
