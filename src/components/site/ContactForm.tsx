@@ -59,7 +59,6 @@ const ContactForm = () => {
 
   return (
     <section className="w-full py-24 px-4 bg-background relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/10 opacity-60 pointer-events-none shadow-2xl"></div>
       <div className="container mx-auto max-w-4xl relative z-10">
         <ScrollReveal className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
@@ -68,8 +67,9 @@ const ContactForm = () => {
           </p>
         </ScrollReveal>
         
-        <ScrollReveal delay={200}>
-          <Card className="mx-auto max-w-2xl glass-card border bg-card/20 backdrop-blur-sm">
+        <ScrollReveal delay={200} className="relative">
+          <div className="absolute inset-0 bg-gradient-radial from-primary/20 via-primary/10 to-transparent opacity-60 blur-3xl scale-150 pointer-events-none"></div>
+          <Card className="mx-auto max-w-2xl glass-card border bg-card/20 backdrop-blur-sm relative z-10">
             <CardHeader>
               <CardTitle className="text-foreground">Contact Us</CardTitle>
               <CardDescription className="text-muted-foreground">
