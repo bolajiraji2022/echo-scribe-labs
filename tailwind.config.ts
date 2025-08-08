@@ -153,7 +153,7 @@ export default {
 				'slide-out-right': 'slide-out-right 0.3s ease-out',
 				enter: 'fade-in 0.3s ease-out, scale-in 0.2s ease-out',
 				exit: 'fade-out 0.3s ease-out, scale-out 0.2s ease-out',
-				'gradient-move': 'gradient-move 6s ease-in-out infinite'
+				'gradient-move': 'gradient-move 12s ease-in-out infinite'
 			}
 		}
 	},
