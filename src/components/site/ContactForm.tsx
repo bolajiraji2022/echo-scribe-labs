@@ -61,7 +61,7 @@ const ContactForm = () => {
     <section className="w-full py-24 pb-12 px-4 bg-background relative">
       <div className="container mx-auto max-w-4xl relative z-10">
         <ScrollReveal className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white to-red-500 bg-clip-text text-transparent">Get in Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-white via-red-400 to-red-600 bg-clip-text text-transparent bg-[length:200%_100%] animate-gradient-move">Get in Touch</h2>
           <p className="text-xl text-muted-foreground">
             Ready to transform your business with AI voice automation? Let's talk.
           </p>
