@@ -14,8 +14,9 @@ const Feature = ({ Icon, title, desc }: { Icon: any; title: string; desc: string
 const Features = () => {
   return (
     <section id="features" className="container py-12">
-      <ScrollReveal className="mb-8 text-center">
-        <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block mb-4">Designed for performance</h2>
+      <ScrollReveal className="mb-8 text-center relative">
+        <div className="absolute inset-0 bg-gradient-radial from-primary/15 via-primary/5 to-transparent opacity-60 blur-2xl scale-110 pointer-events-none"></div>
+        <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block mb-4 relative z-10">Designed for performance</h2>
         <p className="mt-1 text-muted-foreground text-sm">Everything you need to deploy Otomato automation solutions.</p>
       </ScrollReveal>
 

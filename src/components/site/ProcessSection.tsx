@@ -35,8 +35,9 @@ const ProcessStep = ({
 const ProcessSection = () => {
   return (
     <section id="process" className="container py-16">
-      <ScrollReveal className="text-center mb-12">
-        <h2 className="text-lg mb-6 border border-border rounded-md px-3 py-1 inline-block">Process</h2>
+      <ScrollReveal className="text-center mb-12 relative">
+        <div className="absolute inset-0 bg-gradient-radial from-primary/15 via-primary/5 to-transparent opacity-60 blur-2xl scale-110 pointer-events-none"></div>
+        <h2 className="text-lg mb-6 border border-border rounded-md px-3 py-1 inline-block relative z-10">Process</h2>
         <h3 className="text-xl font-semibold md:text-2xl mb-4">
           Your voice AI transformation in three stages
         </h3>
