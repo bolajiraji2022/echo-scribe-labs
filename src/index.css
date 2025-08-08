@@ -21,6 +21,11 @@ All colors MUST be HSL.
     --brand-500: 356 58% 40%;
     --brand-600: 356 60% 34%;
 
+    --red-400: 0 72% 55%;
+    --red-500: 0 72% 50%;
+    --red-600: 0 72% 45%;
+    --red-foreground: 0 0% 98%;
+
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
