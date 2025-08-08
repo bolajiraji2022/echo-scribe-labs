@@ -3,9 +3,9 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const CTA = () => {
   return (
-    <section id="cta" className="relative">
-      <div className="container py-12">
-        <ScrollReveal className="text-center bg-card/20 backdrop-blur-sm border border-border rounded-3xl px-8 py-10 max-w-2xl mx-auto">
+    <section id="cta" className="relative bg-gradient-to-r from-primary/5 via-background to-primary/5 py-16">
+      <div className="container">
+        <ScrollReveal className="text-center bg-card/40 backdrop-blur-sm border border-primary/20 rounded-3xl px-8 py-12 max-w-2xl mx-auto shadow-lg shadow-primary/10">
           <ScrollReveal>
             <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
               Ready to transform your communication?
