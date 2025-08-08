@@ -6,7 +6,7 @@ const CTA = () => {
     <section id="cta" className="relative bg-background py-12">
       <div className="container">
         <ScrollReveal className="text-center">
-          <div className="bg-gradient-to-br from-blue-900/60 via-blue-800/30 to-transparent backdrop-blur-sm border border-border rounded-3xl px-8 py-10 max-w-2xl mx-auto">
+          <div className="bg-gradient-to-br from-blue-900/90 via-blue-800/70 to-blue-700/30 backdrop-blur-sm border border-border rounded-3xl px-8 py-10 max-w-2xl mx-auto">
           <ScrollReveal>
             <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
               Ready to transform your communication?
