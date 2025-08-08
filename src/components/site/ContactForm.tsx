@@ -68,8 +68,8 @@ const ContactForm = () => {
         </ScrollReveal>
         
         <ScrollReveal delay={200} className="relative">
-          <div className="absolute inset-0 bg-gradient-radial from-primary/15 via-primary/10 to-transparent opacity-60 blur-3xl scale-150 pointer-events-none"></div>
-          <Card className="mx-auto max-w-2xl glass-card border bg-card/20 backdrop-blur-sm relative z-10">
+          <div className="absolute inset-0 bg-gradient-radial from-primary/5 via-primary/3 to-transparent opacity-40 blur-3xl scale-150 pointer-events-none"></div>
+          <Card className="mx-auto max-w-2xl glass-card border bg-card/10 backdrop-blur-sm relative z-10">
             <CardHeader>
               <CardTitle className="text-foreground">Contact Us</CardTitle>
               <CardDescription className="text-muted-foreground">
