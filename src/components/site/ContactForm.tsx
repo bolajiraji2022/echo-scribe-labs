@@ -68,7 +68,7 @@ const ContactForm = () => {
         </ScrollReveal>
         
          <ScrollReveal delay={200} className="relative">
-           <Card className="mx-auto max-w-2xl border relative z-10">
+           <Card className="mx-auto max-w-2xl glass-card border backdrop-blur-sm relative z-10">
             <CardHeader>
               <CardTitle className="text-foreground">Contact Us</CardTitle>
               <CardDescription className="text-muted-foreground">
