@@ -46,11 +46,11 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
     <div
       ref={ref}
       className={cn(
-        "transition-transform duration-300",
-        visible ? "animate-fade-in opacity-100 translate-y-0" : "opacity-0 translate-y-3",
+        "transition-all duration-300 ease-out",
+        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3",
         className
       )}
-      style={delay ? { animationDelay: `${delay}ms` } : undefined}
+      style={delay ? { transitionDelay: `${delay}ms` } : undefined}
       {...rest}
     >
       {children}
