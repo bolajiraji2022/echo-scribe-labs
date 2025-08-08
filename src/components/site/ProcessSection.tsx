@@ -15,14 +15,14 @@ const ProcessStep = ({
   delay?: number;
 }) => (
   <ScrollReveal delay={delay} className="group">
-    <div className="glass-card p-4 rounded-lg border transition-all duration-300 hover:border-brand-500/30">
-      <div className="flex items-start gap-4">
+    <div className="glass-card p-3 rounded-lg border transition-all duration-300 hover:border-brand-500/30">
+      <div className="flex items-start gap-3">
         <div className="flex-shrink-0">
-          <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white shadow-lg">
-            <Icon className="h-5 w-5" />
+          <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gradient-to-br from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white shadow-lg">
+            <Icon className="h-4 w-4" />
           </div>
         </div>
-        <div className="flex-1 space-y-2">
+        <div className="flex-1 space-y-1.5">
           <h3 className="text-sm font-semibold text-foreground">{title}</h3>
           <p className="text-xs text-muted-foreground leading-relaxed">{description}</p>
           <p className="text-xs text-muted-foreground/80 leading-relaxed">{details}</p>
