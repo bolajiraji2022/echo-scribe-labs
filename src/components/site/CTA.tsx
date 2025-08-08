@@ -6,7 +6,7 @@ const CTA = () => {
     <section id="cta" className="relative border-t bg-gradient-to-b from-transparent to-card/40 backdrop-blur-sm">
       <ScrollReveal className="container py-12 text-center">
         <ScrollReveal>
-          <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent animate-pulse">
+          <h2 className="text-2xl font-bold bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent bg-card/20 backdrop-blur-sm border border-border rounded-full px-6 py-3 inline-block">
             Ready to transform your communication?
           </h2>
         </ScrollReveal>
