@@ -58,7 +58,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full py-24 px-4 bg-background relative">
+    <section className="w-full py-24 pb-12 px-4 bg-background relative">
       <div className="container mx-auto max-w-4xl relative z-10">
         <ScrollReveal className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
