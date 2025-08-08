@@ -2,32 +2,31 @@ import { Mic, Settings, Rocket } from "lucide-react";
 import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const ProcessStep = ({ 
-  number, 
   title, 
   description, 
   details, 
-  icon: Icon 
+  icon: Icon,
+  delay = 0
 }: { 
-  number: string;
   title: string; 
   description: string;
   details: string;
   icon: any;
+  delay?: number;
 }) => (
-  <ScrollReveal delay={parseInt(number) * 200} className="group">
-    <div className="flex items-start gap-4">
-      <div className="flex-shrink-0">
-        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-r from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white">
-          <Icon className="h-5 w-5" />
+  <ScrollReveal delay={delay} className="group">
+    <div className="glass-card p-6 rounded-lg border transition-all duration-300 hover:border-brand-500/30">
+      <div className="flex items-start gap-6">
+        <div className="flex-shrink-0">
+          <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white shadow-lg">
+            <Icon className="h-6 w-6" />
+          </div>
         </div>
-      </div>
-      <div className="flex-1">
-        <div className="mb-2">
-          <span className="text-brand-400 font-mono text-xs">{number})</span>
-          <h3 className="text-sm font-semibold text-foreground ml-2 inline">{title}</h3>
+        <div className="flex-1 space-y-3">
+          <h3 className="text-base font-semibold text-foreground">{title}</h3>
+          <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
+          <p className="text-sm text-muted-foreground/80 leading-relaxed">{details}</p>
         </div>
-        <p className="text-xs text-muted-foreground mb-3">{description}</p>
-        <p className="text-xs text-muted-foreground/80 leading-relaxed">{details}</p>
       </div>
     </div>
   </ScrollReveal>
@@ -46,29 +45,29 @@ const ProcessSection = () => {
         </p>
       </ScrollReveal>
 
-      <div className="max-w-4xl mx-auto space-y-12">
+      <div className="max-w-4xl mx-auto space-y-8">
         <ProcessStep
-          number="1"
           title="Discovery & Voice Analysis"
           description="Deep dive into your current call handling, identifying missed opportunities and bottlenecks."
           details="Otomato analyzes your call patterns, peak hours, common inquiries, and customer journey to design AI agents that perfectly match your business needs. Your team's expertise guides every decision."
           icon={Mic}
+          delay={0}
         />
         
         <ProcessStep
-          number="2"
           title="Development & Training"
           description="Custom voice agents that integrate seamlessly with your existing systems."
           details="Your team keeps working the way they know best, while AI agents handle repetitive calls, qualify leads, and provide 24/7 support. Every interaction makes them smarter and more efficient."
           icon={Settings}
+          delay={200}
         />
         
         <ProcessStep
-          number="3"
           title="Launch & Optimize"
           description="Deploy your intelligent voice system with continuous learning and adaptation."
           details="As your business grows and customer needs evolve, your AI agents adapt with you. Real-time analytics ensure peak performance, and updates happen seamlessly. Growth never stops."
           icon={Rocket}
+          delay={400}
         />
       </div>
     </section>
