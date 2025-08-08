@@ -58,8 +58,9 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="w-full py-24 px-4 bg-gradient-to-b from-background to-primary/10">
-      <div className="container mx-auto max-w-4xl">
+    <section className="w-full py-24 px-4 bg-background relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-primary/10 opacity-60 pointer-events-none shadow-2xl"></div>
+      <div className="container mx-auto max-w-4xl relative z-10">
         <ScrollReveal className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
           <p className="text-xl text-muted-foreground">
