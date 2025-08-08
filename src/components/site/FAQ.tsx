@@ -3,12 +3,12 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="w-full py-2 bg-background">
+    <section id="faq" className="w-full py-12 bg-background">
       <div className="container">
         <ScrollReveal className="mb-6 text-center">
         <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block mb-3">Frequently Asked Questions</h2>
       </ScrollReveal>
-      <ScrollReveal delay={200} className="mx-auto w-full max-w-2xl backdrop-blur-sm border border-border rounded-3xl px-8 py-10 mb-16">
+      <ScrollReveal delay={200} className="mx-auto w-full max-w-2xl bg-card/20 backdrop-blur-sm border border-border rounded-3xl px-8 py-10">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger className="text-sm">How quickly can our AI voice agents be deployed?</AccordionTrigger>
