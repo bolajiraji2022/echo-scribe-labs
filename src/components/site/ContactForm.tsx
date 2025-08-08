@@ -59,10 +59,12 @@ const ContactForm = () => {
 
   return (
     <section className="w-full py-24 pb-12 px-4 bg-background relative">
+      <div className="absolute inset-0 bg-gradient-radial from-primary/15 via-transparent to-transparent opacity-70 pointer-events-none"></div>
       <div className="container mx-auto max-w-4xl relative z-10">
-        <ScrollReveal className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-xl text-muted-foreground">
+        <ScrollReveal className="text-center mb-12 relative">
+          <div className="absolute inset-0 bg-gradient-radial from-brand-500/20 via-primary/10 to-transparent opacity-80 blur-2xl scale-125 pointer-events-none"></div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 relative z-10">Get in Touch</h2>
+          <p className="text-xl text-muted-foreground relative z-10">
             Ready to transform your business with AI voice automation? Let's talk.
           </p>
         </ScrollReveal>
