@@ -3,7 +3,7 @@ import ScrollReveal from "@/components/ui/scroll-reveal";
 
 const FAQ = () => {
   return (
-    <section id="faq" className="container py-12">
+    <section id="faq" className="container py-12 bg-gradient-to-br from-background via-background/95 to-primary/5">
       <ScrollReveal className="mb-6 text-center">
         <h2 className="text-lg border border-border rounded-md px-3 py-1 inline-block mb-3">Frequently Asked Questions</h2>
       </ScrollReveal>
