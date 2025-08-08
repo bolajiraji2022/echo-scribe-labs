@@ -15,17 +15,17 @@ const ProcessStep = ({
   delay?: number;
 }) => (
   <ScrollReveal delay={delay} className="group">
-    <div className="glass-card p-6 rounded-lg border transition-all duration-300 hover:border-brand-500/30">
-      <div className="flex items-start gap-6">
+    <div className="glass-card p-4 rounded-lg border transition-all duration-300 hover:border-brand-500/30">
+      <div className="flex items-start gap-4">
         <div className="flex-shrink-0">
-          <div className="flex items-center justify-center w-14 h-14 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white shadow-lg">
-            <Icon className="h-6 w-6" />
+          <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-gradient-to-br from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white shadow-lg">
+            <Icon className="h-5 w-5" />
           </div>
         </div>
-        <div className="flex-1 space-y-3">
-          <h3 className="text-base font-semibold text-foreground">{title}</h3>
-          <p className="text-sm text-muted-foreground leading-relaxed">{description}</p>
-          <p className="text-sm text-muted-foreground/80 leading-relaxed">{details}</p>
+        <div className="flex-1 space-y-2">
+          <h3 className="text-sm font-semibold text-foreground">{title}</h3>
+          <p className="text-xs text-muted-foreground leading-relaxed">{description}</p>
+          <p className="text-xs text-muted-foreground/80 leading-relaxed">{details}</p>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ const ProcessSection = () => {
         </p>
       </ScrollReveal>
 
-      <div className="max-w-4xl mx-auto space-y-8">
+      <div className="max-w-4xl mx-auto space-y-6">
         <ProcessStep
           title="Discovery & Voice Analysis"
           description="Deep dive into your current call handling, identifying missed opportunities and bottlenecks."
