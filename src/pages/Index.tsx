@@ -6,6 +6,7 @@ import Features from "@/components/site/Features";
 import ServicesSection from "@/components/site/ServicesSection";
 import VoiceUseCases from "@/components/site/VoiceUseCases";
 import CTA from "@/components/site/CTA";
+import ContactForm from "@/components/site/ContactForm";
 import FAQ from "@/components/site/FAQ";
 import Footer from "@/components/site/Footer";
 import BackgroundAnimationToggle from "@/components/site/BackgroundAnimationToggle";
@@ -33,6 +34,7 @@ const Index = () => {
         <ServicesSection />
         <VoiceUseCases />
         <CTA />
+        <ContactForm />
         <FAQ />
       </main>
       <Footer />
