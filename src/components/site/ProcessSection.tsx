@@ -36,7 +36,7 @@ const ProcessSection = () => {
   return (
     <section id="process" className="container py-16">
       <ScrollReveal className="text-center mb-12">
-        <h2 className="text-lg mb-2 border border-border rounded-md px-3 py-1 inline-block">Process</h2>
+        <h2 className="text-lg mb-6 border border-border rounded-md px-3 py-1 inline-block">Process</h2>
         <h3 className="text-xl font-semibold md:text-2xl mb-4">
           Your voice AI transformation in three stages
         </h3>
