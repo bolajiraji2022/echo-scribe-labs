@@ -36,7 +36,7 @@ const ProcessSection = () => {
   return (
     <section id="process" className="container py-16">
       <div className="text-center mb-12">
-        <h2 className="text-lg font-semibold mb-2">Process</h2>
+        <h2 className="text-3xl font-bold text-foreground mb-2 tracking-tight">Process</h2>
         <h3 className="text-xl font-semibold md:text-2xl mb-4">
           Your voice AI transformation in three stages
         </h3>
