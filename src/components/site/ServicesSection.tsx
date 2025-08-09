@@ -12,7 +12,22 @@ const ServiceCard = ({
   description: string;
   features: string[];
 }) => (
-  <ScrollReveal className="group rounded-xl glass-card p-6 animate-pan-out hover-pan-out">
+  <ScrollReveal
+    onClick={() => {
+      const el = document.getElementById('contact');
+      el?.scrollIntoView({ behavior: 'smooth' });
+    }}
+    role="button"
+    tabIndex={0}
+    onKeyDown={(e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const el = document.getElementById('contact');
+        el?.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
+    className="group rounded-xl glass-card p-6 animate-pan-out hover-pan-out cursor-pointer focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+  >
     <div className="flex items-center gap-3 mb-4">
       <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gradient-to-r from-[hsl(var(--brand-500))] to-[hsl(var(--brand-600))] text-white">
         <Icon className="h-5 w-5" />
