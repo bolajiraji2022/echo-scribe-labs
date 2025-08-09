@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="h-2 w-2 rounded-full bg-brand-500 animate-pulse"></div>
           <span className="text-xs font-medium text-brand-400">New: 24/7 Voice AI Agents</span>
         </div>
-        <h1 className="text-2xl font-semibold leading-tight md:text-4xl max-w-4xl">
+        <h1 className="text-2xl font-semibold leading-tight md:text-4xl max-w-4xl bg-gradient-to-r from-white via-red-400 via-red-600 to-white bg-clip-text text-transparent animate-gradient-move">
           Stop missing calls while you sleep
         </h1>
         <p className="mt-4 max-w-2xl text-balance text-muted-foreground text-sm leading-relaxed">
